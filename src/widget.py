@@ -23,4 +23,11 @@ def mask_account_card(card_num_or_acc: str) -> str:
     return full_res
 
 
+def get_data(time_data_str: str ) -> str:
+    time_data_list = time_data_str.split('T')
+    data_list = str(time_data_list[0]).split("-")
+    data_str = f"{data_list[2]}.{data_list[1]}.{data_list[0]}"
+    return data_str
+
 print(mask_account_card("Maestro 1596837868705199"))
+print(get_data("2018-07-11T02:26:18.671407"))

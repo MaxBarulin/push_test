@@ -29,5 +29,5 @@ def get_data(time_data_str: str ) -> str:
     data_str = f"{data_list[2]}.{data_list[1]}.{data_list[0]}"
     return data_str
 
-print(mask_account_card("Maestro 1596837868705199"))
+print(mask_account_card("Visa Platinum 8990922113665229"))
 print(get_data("2018-07-11T02:26:18.671407"))

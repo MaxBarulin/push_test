@@ -15,10 +15,10 @@ def mask_account_card(card_num_or_acc: str) -> str:
         full_res = f"Счет {res}"
 
     else:
-        card_name = card_num_or_acc[:-16].replace(" ", "")
+        card_name = card_num_or_acc[:-16]
         card_digit = card_num_or_acc[-16:]
         res = get_mask_card_number(card_digit)
-        full_res = f"{card_name} {res}"
+        full_res = f"{card_name}{res}"
 
     return full_res
 

@@ -1,7 +1,9 @@
-from masks import get_mask_account, get_mask_card_number
+from .masks import get_mask_account
+from .masks import get_mask_card_number
 
 
 def mask_account_card(card_num_or_acc: str) -> str:
+    """Маскировка счета и номер карты"""
     digit = []
     if "Счет" in card_num_or_acc:
         for i in card_num_or_acc:
@@ -24,6 +26,7 @@ def mask_account_card(card_num_or_acc: str) -> str:
 
 
 def get_data(time_data_str: str ) -> str:
+    """Возврат даты"""
     time_data_list = time_data_str.split('T')
     data_list = str(time_data_list[0]).split("-")
     data_str = f"{data_list[2]}.{data_list[1]}.{data_list[0]}"

@@ -1,4 +1,5 @@
 def get_mask_card_number(card_number: str) -> str:
+    """Принимает на вход номер карты и возвращает ее маску"""
     count = 1
     list_cart_number = list(card_number)
     a = []
@@ -16,6 +17,7 @@ def get_mask_card_number(card_number: str) -> str:
 
 
 def get_mask_account(account: str) -> str:
+    """Принимает на вход номер счета и возвращает его маску"""
     account_mask = f"**{account[:4]}"
     return account_mask
 

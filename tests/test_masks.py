@@ -1,7 +1,7 @@
 import pytest
 
 from src.masks import get_mask_account, get_mask_card_number
-from src.widget import mask_account_card
+from src.widget import mask_account_card, get_data
 
 
 def test_get_mask_account(mask_account):
@@ -18,3 +18,7 @@ def test_get_mask_card_number(card_number):
                                   ("Счет 73654108430135874416", "Счет **4416")])
 def test_mask_account_card(x, y):
     assert mask_account_card(x) == y
+
+
+def test_get_data():
+    assert get_data("2018-07-11T02:26:18.671407") == "11.07.2018"

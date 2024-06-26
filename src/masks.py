@@ -13,12 +13,12 @@ def get_mask_card_number(card_number: str) -> str:
             count = 0
         count += 1
     card_number_mask = "".join(a).replace("y", " ")
-    return card_number_mask
+    return card_number_mask[:-1]
 
 
 def get_mask_account(account: str) -> str:
     """Принимает на вход номер счета и возвращает его маску"""
-    account_mask = f"**{account[:4]}"
+    account_mask = f"**{account[-4:]}"
     return account_mask
 
 

@@ -56,11 +56,13 @@ def filter_by_currency(transactions: list[dict], currency: str) -> Generator[dic
 
 
 def transaction_descriptions(transactions: list[dict]) -> Generator[dict, None, None]:
+    """Функция возвращает описание каждой операции по очереди"""
     res = (i["description"] for i in transactions)
     return res
 
 
 def card_number_generator(x: Union[int], y: Union[int]) -> list:
+    """Функция гунерирует номер карты в заданном диапозоне"""
     string_zero = "0000000000000000"
     len_string_zero = len(string_zero)
     # print(len_string_zero)

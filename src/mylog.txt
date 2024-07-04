@@ -1,0 +1,8 @@
+my_function_file ok
+my_function_file ok
+my_function_file ok
+my_function_file error: unsupported operand type(s) for /: 'str' and 'int'. Inputs: ('10', 20), {}
+my_function_file error: unsupported operand type(s) for /: 'str' and 'int'. Inputs: ('10', 20), {}
+my_function_file ok
+my_function_file ok
+my_function_file ok

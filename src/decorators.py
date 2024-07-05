@@ -1,4 +1,6 @@
 def log(filename=None):
+    """Декоратор для логирования вызовов функции и её результатов."""
+
     def my_decorator(func):
         def wrapper(*args, **kwargs):
             if filename is None:

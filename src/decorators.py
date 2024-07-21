@@ -9,7 +9,7 @@ def log(filename=None):
                     print(f"{func.__name__} ok")
                 except Exception as e:
                     print(f"{func.__name__} error: {e}. Inputs: {args}, {kwargs}")
-                    # print("После выполнения функции")
+
             else:
                 if type(filename) is str:
                     try:
@@ -58,5 +58,4 @@ with open("mylog.txt", "r") as file:
     print(lines[-1])
 
 if __name__ == "__main__":
-    # my_function(10, 20)
-    pass
+    my_function(10, 20)

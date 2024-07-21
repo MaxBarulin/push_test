@@ -45,4 +45,4 @@ def get_info_transactions(path_file):
         return []
 
 
-get_info_transactions("../data/operations.json")
+#get_info_transactions("../data/operations.json")

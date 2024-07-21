@@ -130,17 +130,14 @@ def transactions_list_res():
 
 @pytest.fixture
 def info_transaction():
-    return [{
-        "id": 441945886,
-        "state": "EXECUTED",
-        "date": "2019-08-26T10:50:58.294041",
-        "operationAmount": {
-          "amount": "31957.58",
-          "currency": {
-            "code": "RUB"
-          }
+    return [
+        {
+            "id": 441945886,
+            "state": "EXECUTED",
+            "date": "2019-08-26T10:50:58.294041",
+            "operationAmount": {"amount": "31957.58", "currency": {"code": "RUB"}},
         }
-      }]
+    ]
 
 
 @pytest.fixture
@@ -149,10 +146,5 @@ def info_trans():
         "id": 441945886,
         "state": "EXECUTED",
         "date": "2019-08-26T10:50:58.294041",
-        "operationAmount": {
-          "amount": "31957.58",
-          "currency": {
-            "code": "RUB"
-          }
-        }
-      }
+        "operationAmount": {"amount": "31957.58", "currency": {"code": "RUB"}},
+    }

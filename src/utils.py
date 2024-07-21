@@ -44,4 +44,5 @@ def get_info_transactions(path_file):
         logger.warning("файл не найден, неверный путь до файла")
         return []
 
+
 get_info_transactions("../data/operations.json")

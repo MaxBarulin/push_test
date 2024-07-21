@@ -1,13 +1,15 @@
 import json
 
 
-def get_info_transactions(path_file: str) -> list[dict]:
+def get_info_transactions(path_file):
     """
     Функция принимает путь до файла и возвращает операции в исходном файле
     в формате list[dict]
     """
-    try:
+    if type(path_file) is not str:
+        return []
 
+    try:
         with open(path_file, encoding="utf-8") as file:
             try:
                 file_dict = json.load(file)
@@ -22,3 +24,8 @@ def get_info_transactions(path_file: str) -> list[dict]:
 
     except FileNotFoundError:
         return []
+
+
+#print(get_info_transactions(1))
+#print(get_info_transactions(""))
+#print(get_info_transactions("../data/test.operations.json"))

@@ -1,4 +1,3 @@
-import pytest
 from src.decorators import my_function, my_function_file
 
 
@@ -30,5 +29,6 @@ def test_log_error_file():
         lines = file.readlines()
         assert (
             lines[-1]
-            == "my_function_file error: my_function_file() missing 2 required positional arguments: 'x' and 'y'. Inputs: (), {}\n"
+            == "my_function_file error: my_function_file() missing 2 required positional arguments: 'x' and 'y'. "
+               "Inputs: (), {}\n"
         )

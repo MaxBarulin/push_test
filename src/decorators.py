@@ -9,6 +9,7 @@ def log(filename=None):
                     print(f"{func.__name__} ok")
                 except Exception as e:
                     print(f"{func.__name__} error: {e}. Inputs: {args}, {kwargs}")
+
             else:
                 if type(filename) is str:
                     try:

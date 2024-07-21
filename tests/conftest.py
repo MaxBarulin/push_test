@@ -130,8 +130,7 @@ def transactions_list_res():
 
 @pytest.fixture
 def info_transaction():
-    return [
-      {
+    return [{
         "id": 441945886,
         "state": "EXECUTED",
         "date": "2019-08-26T10:50:58.294041",
@@ -141,8 +140,7 @@ def info_transaction():
             "code": "RUB"
           }
         }
-      }
-    ]
+      }]
 
 
 @pytest.fixture

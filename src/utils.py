@@ -26,6 +26,6 @@ def get_info_transactions(path_file):
         return []
 
 
-#print(get_info_transactions(1))
-#print(get_info_transactions(""))
-#print(get_info_transactions("../data/test.operations.json"))
+print(get_info_transactions(1))
+print(get_info_transactions(""))
+print(get_info_transactions("../data/test.operations.json"))

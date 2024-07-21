@@ -1,3 +1,15 @@
+import logging
+
+""" создаем логгер для логирования функций и пишем логи в директорию logs"""
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s:%(name)s - %(levelname)s - %(message)s",
+    filename="../logs/masks.log",  # Запись логов в файл
+    filemode="w",
+)  # Перезапись файла при каждом запуске
+logger = logging.getLogger("masks.py")
+
+
 def get_mask_card_number(card_number: str) -> str:
     """Принимает на вход номер карты и возвращает ее маску"""
     count = 1
@@ -13,12 +25,14 @@ def get_mask_card_number(card_number: str) -> str:
             count = 0
         count += 1
     card_number_mask = "".join(a).replace("y", " ")
+    logger.info("Маскировка карты клиента")
     return card_number_mask[:-1]
 
 
 def get_mask_account(account: str) -> str:
     """Принимает на вход номер счета и возвращает его маску"""
     account_mask = f"**{account[-4:]}"
+    logger.info("Маскировка номера счёта клиента")
     return account_mask
 
 

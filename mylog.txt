@@ -1,3 +1,0 @@
-my_function_file error: [Errno 2] No such file or directory: '../logs/mylog.txt'. Inputs: (10, 20), {}
-my_function_file error: [Errno 2] No such file or directory: '../logs/mylog.txt'. Inputs: (10, 20), {}
-my_function_file error: [Errno 2] No such file or directory: '../logs/mylog.txt'. Inputs: (10, 20), {}

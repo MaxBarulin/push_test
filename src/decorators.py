@@ -52,10 +52,5 @@ def my_function_file(x, y):
     return x / y
 
 
-# my_function_file(10, 20)
-# with open("../logs/mylog.txt", "r") as file:
-#     lines = file.readlines()
-#     print(lines[-1])
-
 if __name__ == "__main__":
     my_function(10, 20)

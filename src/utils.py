@@ -98,6 +98,3 @@ def get_info_transactions_xlsx(path_file: str) -> list[dict]:
     except FileNotFoundError:
         logger.warning("файл не найден, неверный путь до файла")
         return []
-
-
-#get_info_transactions("../data/operations.json")

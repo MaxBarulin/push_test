@@ -151,27 +151,39 @@ def info_trans():
 
 
 @pytest.fixture
+def info_trans1():
+    return {
+        "id": 441945886,
+        "state": "EXECUTED",
+        "date": "2019-08-26T10:50:58.294041",
+        "operationAmount": {"amount": "1000", "currency": {"code": "USD"}},
+    }
+
+
+@pytest.fixture
 def test_info_csv():
-    return {'id': 650703.0,
-            'state': 'EXECUTED',
-            'date': '2023-09-05T11:30:32Z',
-            'amount': 16210.0,
-            'currency_name': 'Sol',
-            'currency_code': 'PEN',
-            'from': 'Счет 58803664561298323391',
-            'to': 'Счет 39745660563456619397',
-            'description': 'Перевод организации'
-            }
+    return {
+        "id": 650703.0,
+        "state": "EXECUTED",
+        "date": "2023-09-05T11:30:32Z",
+        "amount": 16210.0,
+        "currency_name": "Sol",
+        "currency_code": "PEN",
+        "from": "Счет 58803664561298323391",
+        "to": "Счет 39745660563456619397",
+        "description": "Перевод организации",
+    }
 
 
 @pytest.fixture
 def test_info_xlsxx():
-    return {'state': 'EXECUTED',
-            'date': '2023-09-05T11:30:32Z',
-            'amount': 16210.0,
-            'currency_name': 'Sol',
-            'currency_code': 'PEN',
-            'from': 'Счет 58803664561298323391',
-            'to': 'Счет 39745660563456619397',
-            'description': 'Перевод организации'
-            }
+    return {
+        "state": "EXECUTED",
+        "date": "2023-09-05T11:30:32Z",
+        "amount": 16210.0,
+        "currency_name": "Sol",
+        "currency_code": "PEN",
+        "from": "Счет 58803664561298323391",
+        "to": "Счет 39745660563456619397",
+        "description": "Перевод организации",
+    }

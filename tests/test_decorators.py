@@ -30,5 +30,5 @@ def test_log_error_file():
         assert (
             lines[-1]
             == "my_function_file error: my_function_file() missing 2 required positional arguments: 'x' and 'y'. "
-               "Inputs: (), {}\n"
+            "Inputs: (), {}\n"
         )

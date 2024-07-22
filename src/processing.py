@@ -16,10 +16,3 @@ input_data = [
     {"id": 594226727, "state": "CANCELED", "date": "2018-09-12T21:27:25.241689"},
     {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
 ]
-
-if __name__ == "__main__":
-    filtered_executed = filter_by_state(input_data)
-    print(filtered_executed)
-
-    sorted_descending = sort_by_date(input_data, True)
-    print(sorted_descending)

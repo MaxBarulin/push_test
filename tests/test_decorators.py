@@ -18,14 +18,14 @@ def test_log_error(capsys):
 
 def test_log_ok_file():
     my_function_file(10, 20)
-    with open("../logs/mylog.txt", "r") as file:
+    with open("logs/mylog.txt", "r") as file:
         lines = file.readlines()
         assert lines[-1] == "my_function_file ok\n"
 
 
 def test_log_error_file():
     my_function_file()
-    with open("../logs/mylog.txt", "r") as file:
+    with open("logs/mylog.txt", "r") as file:
         lines = file.readlines()
         assert (
             lines[-1]

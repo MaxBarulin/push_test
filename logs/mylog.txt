@@ -1,40 +1,7 @@
 my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
 my_function_file error: my_function_file() missing 2 required positional arguments: 'x' and 'y'. Inputs: (), {}
 my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
 my_function_file error: my_function_file() missing 2 required positional arguments: 'x' and 'y'. Inputs: (), {}
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
-my_function_file ok
 my_function_file ok
 my_function_file error: my_function_file() missing 2 required positional arguments: 'x' and 'y'. Inputs: (), {}
 my_function_file ok
@@ -44,8 +11,4 @@ my_function_file ok
 my_function_file error: my_function_file() missing 2 required positional arguments: 'x' and 'y'. Inputs: (), {}
 my_function_file ok
 my_function_file ok
-my_function_file ok
 my_function_file error: my_function_file() missing 2 required positional arguments: 'x' and 'y'. Inputs: (), {}
-my_function_file ok
-my_function_file ok
-my_function_file ok

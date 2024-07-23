@@ -1,11 +1,13 @@
+
+
 def filter_by_state(items: list, state: str = "EXECUTED") -> list:
-    """Фильтрует список словарей по ключу 'state'."""
+    """Функция возвращает список словарей, по параметру 'state'"""
 
     return [item for item in items if item["state"] == state]
 
 
 def sort_by_date(items: list, reverse: bool = True) -> list:
-    """Сортирует список словарей по ключу 'date'."""
+    """Функция сортирует список словарей по параметру 'date'"""
 
     return sorted(items, key=lambda x: x["date"], reverse=reverse)
 
@@ -16,3 +18,4 @@ input_data = [
     {"id": 594226727, "state": "CANCELED", "date": "2018-09-12T21:27:25.241689"},
     {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
 ]
+print(filter_by_state(input_data, "EXECUTED"))

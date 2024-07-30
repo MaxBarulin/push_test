@@ -15,12 +15,12 @@ def log(filename=None):
                     try:
                         func(*args, **kwargs)
                         # print("ok")
-                        with open(f"logs/{filename}", "a") as file:
+                        with open(f"../logs/{filename}", "a") as file:
                             file.write(f"{func.__name__} ok")
                             file.write("\n")
 
                     except Exception as e:
-                        with open(f"logs/{filename}", "a") as file:
+                        with open(f"../logs/{filename}", "a") as file:
                             file.write(f"{func.__name__} error: {e}. Inputs: {args}, {kwargs}")
                             file.write("\n")
                 else:
@@ -28,12 +28,12 @@ def log(filename=None):
                     try:
                         func(*args, **kwargs)
                         # print("ok")
-                        with open(f"logs/{filename_str}", "a") as file:
+                        with open(f"../logs/{filename_str}", "a") as file:
                             file.write(f"{func.__name__} ok")
                             file.write("\n")
 
                     except Exception as e:
-                        with open(f"logs/{filename_str}", "a") as file:
+                        with open(f"../logs/{filename_str}", "a") as file:
                             file.write(f"{func.__name__} error: {e}. Inputs: {args}, {kwargs}")
                             file.write("\n")
 
@@ -53,4 +53,4 @@ def my_function_file(x, y):
 
 
 if __name__ == "__main__":
-    my_function(10, 20)
+    my_function_file(10, 20)
